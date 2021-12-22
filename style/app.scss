@@ -129,7 +129,7 @@ body {
     &--title {
         position: absolute;
         width: 400px;
-        top: -420px;
+        top: -320px;
         right: 69px;
 
         & p {
@@ -170,7 +170,7 @@ body {
         position: absolute;
         width: 367px;
         right: 34px;
-        top: -176px;
+        top: -126px;
         font-size: 48px;
 
         @media only screen and (min-width: 620px) {
@@ -211,7 +211,7 @@ body {
 
     &--footer {
         position: absolute;
-        bottom: 95%;
+        bottom: 85%;
         right: 36%;
 
         & p {
