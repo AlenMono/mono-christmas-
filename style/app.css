@@ -1,8 +1,14 @@
-@import url("http://fonts.cdnfonts.com/css/grinched-2");
 @font-face {
   font-family: "National2";
   src: url("../fonts/National2Web-Regular.eot") format("eot");
   src: url("../fonts/National2Web-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/National2Web-Regular.woff2") format("woff2"), url("../fonts/National2Web-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "grinched";
+  src: url("../fonts/grinchedregular-webfont.woff2") format("woff2"), url("../fonts/grinchedregular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -19,7 +25,7 @@ body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#303077), to(#23235e));
   background: linear-gradient(180deg, #303077 0%, #23235e 100%);
-  font-family: Grinched;
+  font-family: "grinched", cursive;
   color: #fff;
 }
 
