@@ -1,0 +1,490 @@
+@import url("http://fonts.cdnfonts.com/css/grinched-2");
+@font-face {
+  font-family: "National2";
+  src: url("../fonts/National2Web-Regular.eot") format("eot");
+  src: url("../fonts/National2Web-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/National2Web-Regular.woff2") format("woff2"), url("../fonts/National2Web-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#303077), to(#23235e));
+  background: linear-gradient(180deg, #303077 0%, #23235e 100%);
+  font-family: Grinched;
+  color: #fff;
+}
+
+.c-card--building {
+  position: absolute;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .c-card--building {
+    top: 22%;
+  }
+  .c-card--building .u-icon--building {
+    width: 80%;
+  }
+}
+
+.c-card--earth {
+  position: absolute;
+  bottom: 0;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .c-card--earth .u-icon--earth {
+    width: 77%;
+  }
+}
+
+.c-card--logo {
+  position: fixed;
+  bottom: 19%;
+  right: 0;
+  left: auto;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+@media only screen and (min-width: 620px) {
+  .c-card--logo {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    bottom: 3%;
+    right: 2%;
+    left: auto;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .c-card--logo {
+    left: 2%;
+    right: auto;
+  }
+}
+
+.c-card--logo p {
+  width: 124px;
+  margin-bottom: 16px;
+  opacity: 0.6;
+  font-family: "National2";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16.3714px;
+  line-height: 20px;
+}
+
+@media only screen and (min-width: 620px) {
+  .c-card--logo p {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .c-card--logo p {
+    left: 2%;
+    right: auto;
+    width: 220px;
+  }
+}
+
+.c-card--star {
+  position: fixed;
+  top: 5%;
+  right: 3%;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  stroke-dasharray: 40px;
+  stroke-dashoffset: 0;
+  -webkit-animation: starAnimation 30s linear infinite alternate;
+          animation: starAnimation 30s linear infinite alternate;
+}
+
+@media only screen and (min-width: 620px) {
+  .c-card--star {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    top: 5%;
+    right: auto;
+    left: 3%;
+  }
+}
+
+.c-card--title {
+  position: absolute;
+  width: 400px;
+  top: -420px;
+  right: 69px;
+}
+
+.c-card--title p {
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media only screen and (min-width: 620px) {
+  .c-card--title {
+    top: -100px;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 769) {
+  .c-card--title {
+    top: -100px;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 976px) {
+  .c-card--title {
+    top: -100px;
+    right: -60px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .c-card--title {
+    top: -250px;
+  }
+  .c-card--title p {
+    font-size: 111px;
+    line-height: 104px;
+  }
+}
+
+.c-card--description {
+  position: absolute;
+  width: 367px;
+  right: 34px;
+  top: -176px;
+  font-size: 48px;
+}
+
+@media only screen and (min-width: 620px) {
+  .c-card--description {
+    width: 267px;
+    right: -144px;
+    top: 135px;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 769) {
+  .c-card--description {
+    text-align: center;
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 976px) {
+  .c-card--description {
+    right: -144px;
+    top: 144px;
+    font-size: 38px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .c-card--description {
+    top: 0;
+    right: -220px;
+  }
+  .c-card--description p {
+    width: 467px;
+    right: -500px;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+}
+
+.c-card--footer {
+  position: absolute;
+  bottom: 95%;
+  right: 36%;
+}
+
+.c-card--footer p {
+  opacity: 0.6;
+  font-family: National 2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16.3714px;
+  line-height: 20px;
+}
+
+.c-card--footer span {
+  font-family: "National2";
+}
+
+@media only screen and (min-width: 620px) {
+  .c-card--footer {
+    bottom: 45%;
+    right: -11%;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .c-card--footer {
+    bottom: 5%;
+    right: -25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .c-card--footer {
+    right: -35%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .c-card--footer {
+    right: -35%;
+  }
+}
+
+.c-card--center {
+  position: fixed;
+  bottom: -92px;
+  left: -123px;
+  width: 600px;
+  height: 606px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+@media only screen and (min-width: 620px) {
+  .c-card--center {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .c-card--center {
+    left: 25%;
+  }
+}
+
+@media only screen and (min-width: 1210px) {
+  .c-card--center {
+    left: 22%;
+  }
+}
+
+@media only screen and (min-width: 1710px) {
+  .c-card--center {
+    left: 30%;
+  }
+}
+
+.u-icon--star {
+  position: fixed;
+  -webkit-animation: scaleAnimation 3s infinite;
+          animation: scaleAnimation 3s infinite;
+}
+
+.u-icon--star--1 {
+  left: 2%;
+  top: 40%;
+}
+
+.u-icon--star--2 {
+  left: 24%;
+  top: 64%;
+}
+
+.u-icon--star--3 {
+  left: 30%;
+  top: 45%;
+}
+
+.u-icon--star--4 {
+  left: 20%;
+  top: 20%;
+}
+
+.u-icon--star--5 {
+  left: 10%;
+  top: 8px;
+}
+
+.u-icon--star--6 {
+  width: 11.71px;
+  height: 14.22px;
+  left: 90%;
+  top: 25%;
+}
+
+.u-icon--star--7 {
+  width: 10.99px;
+  height: 13.35px;
+  left: 42%;
+  top: 10%;
+}
+
+.u-icon--star--8 {
+  width: 18.92px;
+  height: 22.97px;
+  left: 60%;
+  top: 60%;
+  display: none;
+}
+
+@media only screen and (min-width: 620px) {
+  .u-icon--star--8 {
+    display: block;
+  }
+}
+
+.u-icon--star--9 {
+  width: 18.2px;
+  height: 22.1px;
+  left: 18%;
+  top: 81%;
+}
+
+.u-icon--star--10 {
+  width: 19.28px;
+  height: 23.41px;
+  left: 65%;
+  top: 80%;
+}
+
+.u-icon--star--11 {
+  width: 14.05px;
+  height: 17.06px;
+  left: 70%;
+  top: 30%;
+}
+
+.u-icon--star--12 {
+  width: 17.84px;
+  height: 21.66px;
+  left: 75%;
+  top: 10%;
+  display: none;
+}
+
+@media only screen and (min-width: 620px) {
+  .u-icon--star--12 {
+    display: block;
+  }
+}
+
+.u-icon--star--13 {
+  width: 19.28px;
+  height: 23.41px;
+  left: 80%;
+  top: 60%;
+}
+
+.u-icon--star--14 {
+  width: 18.92px;
+  height: 22.97px;
+  left: 85px;
+  top: 60%;
+  display: none;
+}
+
+@media only screen and (min-width: 620px) {
+  .u-icon--star--14 {
+    display: block;
+  }
+}
+
+.u-icon--star--15 {
+  width: 18.92px;
+  height: 22.97px;
+  left: 90%;
+  top: 90%;
+}
+
+@-webkit-keyframes scaleAnimation {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@-webkit-keyframes starAnimation {
+  from {
+    stroke-dashoffset: 500;
+  }
+}
+
+@keyframes starAnimation {
+  from {
+    stroke-dashoffset: 500;
+  }
+}
+/*# sourceMappingURL=app.css.map */
